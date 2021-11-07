@@ -8,44 +8,23 @@ class InteractionNetwork
   def initialize(params)
     @gene_original = params.fetch(:gene_original, nil)
     @all_genes = params.fetch(:all_genes, Hash.new)
-    @network = recursive_function(@gene_original,Array.new,@all_genes,contador = 0)
+    @network = Array.new
+    recursive_function(@gene_original)
   end
       
   
-  def recursive_function(gene_obj,all_genes)  #contador
-    if @network.include? (gene_obj.agi_locus)
+  def recursive_function(gene_obj)
+    #puts @network.length
+    if @network.include? (gene_obj)
         return    
-    else
-      #if contador > 3
-      #    return 
-      #else
-      if gene.type == Gene        
-        @network << gene_obj #.agi_locus
-        interactions = gene_obj.interactions #es una lista con las interacciones del gene
-        #puts interactions
-      else 
-        if interactions.empty?
-          return 
-        else  
-          interactions.each {|gene_int| 
-            if all_genes.has_key? (gene_int.downcase) 
-              int_obj = all_genes[gene_int.downcase]
-              #puts int_obj
-              puts 
-              @network << int_obj #.agi_locus
-              
-              if int_obj.interactions.empty?
-                next
-              else
-                  recursive_function(int_obj,all_genes) #,contador+1)
-              end
-            else          
-              @network << gene_int.downcase
-              next           
-              
-            end}
-          end
-      end
-    end 
+    end         
+    @network << gene_obj #mete el objeto gen en el atributo network que es una lista
+    gene_obj.interactions.each {|gene_int| #para cada interaccion (que es una string)
+        if @all_genes.has_key? (gene_int.downcase) #si ese gen es una key del diccionario con los genes objetos (es decir, si es un objeto Gen)
+            int_obj = @all_genes[gene_int.downcase] #dame ese objeto con sus respectivos atributos Gen1.2.(objeto)           
+            recursive_function(int_obj)
+        
+        end}      
+      
   end
-end 
+end

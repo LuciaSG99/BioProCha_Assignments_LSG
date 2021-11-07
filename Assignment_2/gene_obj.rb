@@ -52,7 +52,7 @@ class Gene
           if line[5].match(/A[tT][1-5]g/) == nil
             next
           end
-          if line[14].match(/\d.\d{2}/)[0].to_f < 0.5
+          if line[14].match(/\d.\d{2}/)[0].to_f < 0.45
             next
           end    
           int1 = line[4].match(/A[tT][1-5]g\d+/)[0]
