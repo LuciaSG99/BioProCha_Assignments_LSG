@@ -15,13 +15,16 @@ def read_file_genes(file)
 return genes_list
 end
 
-genes_list = read_file_genes(file)
-hash_interactions = Hash.new(0)
 
 #### OBTAIN THE INTERACTIONS OF THE GENES FROM THE ORIGINAL LIST
+genes_list = read_file_genes(file)
+hash_interactions = Hash.new
 genes_list[0..70].each {|gene| 
 hash_interactions["#{gene.downcase}"] = Gene.new(:agi_locus => "#{gene.downcase}",:level => 1)} #each value of the hash is a Gene object that correspond with the genes from the original list
-
+ #hash_interactions.values.each{|gene_original|
+ # puts "Interactions :"
+ # puts gene_original.interactions
+ # puts }
 #lo pongo en minusculas las keys para quitarme los problemas de mezcla mayusculas y minusculas
 puts "Hash interaction length with only original genes:"
 puts hash_interactions.length
@@ -50,40 +53,48 @@ hash_interactions["#{gene.downcase}"] = Gene.new(:agi_locus => "#{gene.downcase}
 puts "Hash interaction length with all genes:"
 puts hash_interactions.length
 
-########## REMOVE GENES WITHOUT INTERACTIONS OR JUST ONE INTERACTION:
-### BUCLE
-#hash_clean_interactions = Hash.new
-#hash_interactions.each{|key,gene_obj|
-#  unless 
-#    hash_clean_interactions[]
-#  end
-#  
-#  }
-
 ###METODO QUE NO FUNCIONA
-puts "Genes with level 1 before clean"
-puts hash_interactions.values.select{|key,value| value.level == 1}.length
+hash_interactions_updated = Hash.new
+hash_interactions.values.each{|gene_obj|
+  if gene_obj.interactions.length < 1
+    next
+  end
+  if gene_obj.level > 1 and gene_obj.interactions.length < 2
+    next
+  end
+  hash_interactions_updated[gene_obj.agi_locus] = gene_obj}
 
-hash_interactions.values.select!{|key,value| value.interactions.length > 0}
 
-puts "Hash_interaction length quitando los genes sin interacciones:"
-puts hash_interactions.length
 
-hash_interactions.values.reject!{|key,value| value.level > 1 && value.interactions.length < 2}
-puts "Hash_interaction length quitando los genes 2 y 3 con menos de dos interacciones:"
-puts hash_interactions.length
+#puts "Genes with level 1 before clean"
+#puts hash_interactions.values.select{|value| value.level == 1}.length
+#
+#hash_interactions.values.select!{|value| value.interactions.length > 0}
+#
+#puts "Hash_interaction length quitando los genes sin interacciones:"
+#puts hash_interactions.length
+#
+#hash_interactions.values.reject!{|value| value.level > 1 && value.interactions.length < 2}
+#puts "Hash_interaction length quitando los genes 2 y 3 con menos de dos interacciones:"
+#puts hash_interactions.length
+#
+#puts "Genes with level 1 after clean"
+#puts hash_interactions.values.select{|value| value.level == 1}.length
+#"Total Genes after clean: "
+#puts hash_interactions.length
 
-puts "Genes with level 1 after clean"
-puts hash_interactions.values.select{|key,value| value.level == 1}.length
-"Total Genes after clean: "
-puts hash_interactions.length
 ######### CREATING AND OBTAINING INTERACTIONS NETWORKS USING THE INTERACTION NETWORK CLASS:
 list_of_networks = Array.new
-hash_interactions.values.each {|gene|                            
+hash_interactions_updated.values.select!{|value| value.level.to_i == 1}.each {|gene|                            
                             unless list_of_networks.any?{|int_network| int_network.network.any?{|int| gene == int}} #para no hacer redes repetidas
-                              network = InteractionNetwork.new(:gene_original => gene,:all_genes => hash_interactions)                               
+                              network = InteractionNetwork.new(:gene_original => gene,:all_genes => hash_interactions_updated)                               
                               list_of_networks << network
                             end}
+
+hash_interactions_updated.values.select{|gene_obj| gene_obj.level == 1}.each{|gene_original|
+  puts "Interactions :"
+  puts gene_original.interactions
+  puts }
 #puts "Number of networks: "
 #puts list_of_networks.length #--> cuantas redes obtengo
 #list_of_networks.each{|red|puts "network:"

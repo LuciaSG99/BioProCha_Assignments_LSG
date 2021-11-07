@@ -68,9 +68,9 @@ class Gene
           end
           
           if int1.casecmp(@agi_locus) == 0 #to ignore the case of the letters. If the strings are equals, it returns 0
-             list << int2
+             list << int2.downcase
           else
-              list << int1
+              list << int1.downcase
           end}
           
       else    
