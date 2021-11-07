@@ -19,7 +19,7 @@ genes_list = read_file_genes(file)
 hash_interactions = Hash.new(0)
 
 #### OBTAIN THE INTERACTIONS OF THE GENES FROM THE ORIGINAL LIST
-genes_list.each {|gene| 
+genes_list[0..30].each {|gene| 
 hash_interactions["#{gene.downcase}"] = Gene.new(:agi_locus => "#{gene.downcase}",:level => 1)} #each value of the hash is a Gene object that correspond with the genes from the original list
 #lo pongo en minusculas las keys para quitarme los problemas de mezcla mayusculas y minusculas
 
@@ -48,10 +48,10 @@ list_of_networks = Array.new
 hash_interactions.values.each {|gene| network = InteractionNetwork.new(:gene_original => gene,:all_genes => hash_interactions)
                                     list_of_networks << network}
 
- puts list_of_networks.length #--> ME SALEN 21 REDES SIN LIMPIAR
- #list_of_networks[136..200].each{|red|puts "network:"
- #  puts red.network   
- #  puts "\n"} ## PARA VER COMO SON ESAS REDES SIN LIMPIAR
+# puts list_of_networks.length #--> ME SALEN 21 REDES SIN LIMPIAR
+ list_of_networks.each{|red|puts "network:"
+   puts red.network   
+   puts "\n"} ## PARA VER COMO SON ESAS REDES SIN LIMPIAR
 
 #### A FUNCTION THAT STORE IN AN ARRAY ONLY THE NETWORKS THAT INCLUDES AT LEAST TWO OF THE ORIGINAL GENES:
 def remove_networks_no_functional(array_of_networks,list_original_genes,new_list_networks)
@@ -72,3 +72,4 @@ end
 #  puts}
 #  
   
+# hash = { "AT1G23094": Gene_obj,...}

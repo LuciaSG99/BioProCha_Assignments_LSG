@@ -76,7 +76,7 @@ class Gene
       else    
         list << ""
       end
-          return list       
+         return list.select{|int| int != agi_locus}       
     end
     
 end
