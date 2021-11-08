@@ -61,41 +61,40 @@ class InteractionNetwork
   end
   
   
-  
+  #
   def obtain_kegg_network
-    @network.each{|gene_id| result_kegg_patways = fetch("http://togows.org/entry/kegg-genes/ath:#{gene_id.agi_locus}/pathways.json")
-        kegg_patways_json = JSON.parse(result_go_patways) #transform the results into JSON format
-        kegg_pathways_gene = kegg_patways_json[0]  #store the hash with the KEGG ID and the patways' name
-        unless @kegg_annotations.has_key?
-            #code
+    @network.each{|gene_id|
+      if gene_id.level.to_i == 1      
+        result_kegg_pathways = fetch("http://togows.org/entry/kegg-genes/ath:#{gene_id.agi_locus}/pathways.json")
+        kegg_pathways_json = JSON.parse(result_kegg_pathways) #transform the results into JSON format
+        if kegg_pathways_json == []
+            next
         end
-        
+        kegg_pathways_gene = kegg_pathways_json[0]  #store the hash with the KEGG ID and the patways' name
         kegg_pathways_gene.each {|key,value| unless @kegg_annotations.has_key?(key)
             @kegg_annotations[key] = value
-        end}}
+        end}
+      else
+         next
+      end}
   end
-  
+  #
   def obtain_go_network
-    @network.each{|gene_id| result_go_patways = fetch("http://togows.org/entry/ebi-uniprot/#{gene_id.agi_locus}/dr.json")
-    go_pathways_json = JSON.parse(result_go_patways) #transform the results into JSON format
-    #select only the biological process:
-    go_biological_process = go_pathways_json[0]["GO"].select!{|array| array.any?{|element| element =~ /P:/}}
-    go_biological_process.each{|result| @go_annotations[result[0]] = result[1]}}
+    @network.each{|gene_id|
+    if gene_id.level.to_i == 1  
+      result_go_pathways = fetch("http://togows.org/entry/ebi-uniprot/#{gene_id.agi_locus}/dr.json")
+      go_pathways_json = JSON.parse(result_go_pathways) #transform the results into JSON format
+      if go_pathways_json.empty?
+         next
+      else
+         #select only the biological process:
+         go_biological_process = go_pathways_json[0]["GO"].select!{|array| array.any?{|element| element =~ /P:/}}
+         go_biological_process.each{|result| @go_annotations[result[0]] = result[1]}
+      end
+     else
+      next 
+    end}
   end
+  #
   
-  
-#  def obtain_gene_kegg(gene_id)
-#    result_kegg_patways = fetch("http://togows.org/entry/kegg-genes/ath:#{gene_id}/pathways.json")
-#    kegg_patways_json = JSON.parse(result_go_patways) #transform the results into JSON format
-#    kegg_pathways_gene = kegg_patways_json[0] #{"ath00270"=>"Cysteine", "ath01100"=>"Metabolic pathways"}
-#    
-#    return 
-#  end
-#  
-#  def obtain_gene_go(gene_id)
-#    result_go_patways = fetch("http://togows.org/entry/ebi-uniprot/#{gene_id}/dr.json")
-#    go_patways_json = JSON.parse(result_go_patways) #transform the results into JSON format
-#    return go_pathways_json
-#  end
-#  
 end
