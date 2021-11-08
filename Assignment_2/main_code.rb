@@ -53,8 +53,8 @@ hash_interactions["#{gene.downcase}"] = Gene.new(:agi_locus => "#{gene.downcase}
 puts "Hash interaction length with all genes:"
 puts hash_interactions.length
 
-###METODO QUE NO FUNCIONA
-hash_interactions_updated = Hash.new
+### DELETING GENES THAT DON'T HAVE INTERACTIONS:
+hash_interactions_updated = Hash.new #new hash that will contain only those genes that have interactions
 hash_interactions.values.each{|gene_obj|
   if gene_obj.interactions.length < 1
     next
@@ -64,42 +64,35 @@ hash_interactions.values.each{|gene_obj|
   end
   hash_interactions_updated[gene_obj.agi_locus] = gene_obj}
 
+#hash_interactions_updated.values[0..30].each{|gene_original| #to see if it worked
+#  puts "Interactions :"
+#  puts gene_original.interactions
+#  puts }
 
 
-#puts "Genes with level 1 before clean"
-#puts hash_interactions.values.select{|value| value.level == 1}.length
-#
-#hash_interactions.values.select!{|value| value.interactions.length > 0}
-#
-#puts "Hash_interaction length quitando los genes sin interacciones:"
-#puts hash_interactions.length
-#
-#hash_interactions.values.reject!{|value| value.level > 1 && value.interactions.length < 2}
-#puts "Hash_interaction length quitando los genes 2 y 3 con menos de dos interacciones:"
-#puts hash_interactions.length
-#
-#puts "Genes with level 1 after clean"
-#puts hash_interactions.values.select{|value| value.level == 1}.length
-#"Total Genes after clean: "
-#puts hash_interactions.length
 
 ######### CREATING AND OBTAINING INTERACTIONS NETWORKS USING THE INTERACTION NETWORK CLASS:
 list_of_networks = Array.new
-hash_interactions_updated.values.select!{|value| value.level.to_i == 1}.each {|gene|                            
+hash_interactions_updated.values.each {|gene|                            
                             unless list_of_networks.any?{|int_network| int_network.network.any?{|int| gene == int}} #para no hacer redes repetidas
                               network = InteractionNetwork.new(:gene_original => gene,:all_genes => hash_interactions_updated)                               
                               list_of_networks << network
                             end}
 
-hash_interactions_updated.values.select{|gene_obj| gene_obj.level == 1}.each{|gene_original|
-  puts "Interactions :"
-  puts gene_original.interactions
-  puts }
-#puts "Number of networks: "
-#puts list_of_networks.length #--> cuantas redes obtengo
-#list_of_networks.each{|red|puts "network:"
-#   puts red.network.select{|gene| gene.level == 1}.length #ver cuantos genes originales tenemos en cada network conseguida 
-#   puts red.network.length} ## ver la longitud de cada red
+#hash_interactions_updated.values.select{|gene_obj| gene_obj.level == 1}.each{|gene_original|
+#  puts "Interactions :"
+#  puts gene_original.interactions
+#  puts }
+puts "Number of networks: "
+puts list_of_networks.length #--> cuantas redes obtengo
+list_of_networks.each{|red|
+     n = 0
+     puts "network:"
+     if red.network.any?{|int| int.level == 1} == true
+       n+=1#ver cuantos genes originales tenemos en cada network conseguida 
+     end
+     puts n
+     puts red.network.length} ## ver la longitud de cada red
 
 #### A FUNCTION THAT STORE IN AN ARRAY ONLY THE NETWORKS THAT INCLUDES AT LEAST TWO OF THE ORIGINAL GENES:
 def remove_networks_no_functional(array_of_networks,list_original_genes,new_list_networks)
@@ -118,6 +111,5 @@ end
 #puts list_of_int_networks.length #to see how many networks are obtained : ME APARECEN 0 REDES "LIMPIAS"
 #list_of_int_networks.each{|element| element.network #to see what contain each network
 #  puts}
-#  
   
-# hash = { "AT1G23094": Gene_obj,...}
+  

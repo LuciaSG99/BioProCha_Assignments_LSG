@@ -13,8 +13,8 @@ class InteractionNetwork
     @all_genes = params.fetch(:all_genes, Hash.new)
     @network = Array.new
     recursive_function(@gene_original)
-    @GO_annotations = Hash.new
-    @KEGG_annotations
+    @go_annotations = Hash.new
+    @kegg_annotations = Hash.new
   end
       
   
@@ -56,13 +56,36 @@ class InteractionNetwork
         return response  # now we are returning 'False', and we will check that with an \"if\" statement in our main code
   end
   
-  def obtain_gene_KEGG
+  
+  
+  def obtain_kegg_network
+    @network.each{|gene_id| result_kegg_patways = fetch("http://togows.org/entry/kegg-genes/ath:#{gene_id}/pathways.json")
+        kegg_patways_json = JSON.parse(result_go_patways) #transform the results into JSON format
+        kegg_pathways_gene = kegg_patways_json[0]  #store the hash with the KEGG ID and the patways' name
+        unless @kegg_annotations.has_key?
+            #code
+        end
+        
+        kegg_pathways_gene.each {|key,value| unless @kegg_annotations.has_key?(key)
+            @kegg_annotations[key] = value
+        end}}
+  end
+  
+  
+  
+  
+  def obtain_gene_kegg(gene_id)
+    result_kegg_patways = fetch("http://togows.org/entry/kegg-genes/ath:#{gene_id}/pathways.json")
+    kegg_patways_json = JSON.parse(result_go_patways) #transform the results into JSON format
+    kegg_pathways_gene = kegg_patways_json[0] #{"ath00270"=>"Cysteine", "ath01100"=>"Metabolic pathways"}
     
+    return 
   end
   
-  def obtain_gene_GO
-   
+  def obtain_gene_go(gene_id)
+    result_go_patways = fetch("http://togows.org/entry/ebi-uniprot/#{gene_id}/dr.json")
+    go_patways_json = JSON.parse(result_go_patways) #transform the results into JSON format
+    return go_pathways_json
   end
-  
   
 end
