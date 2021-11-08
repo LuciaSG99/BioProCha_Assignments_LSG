@@ -59,11 +59,11 @@ class Gene
           
           int2 = line[5].match(/A[tT][1-5]g\d+/)[0]
           
-          if list.include? int1 #to avoid insert repeated interactions
+          if list.include? int1.downcase #to avoid insert repeated interactions
             next
           end         
           
-          if list.include? int2
+          if list.include? int2.downcase
             next
           end
           
@@ -76,6 +76,7 @@ class Gene
       else    
         list << ""
       end
+         
          return list.select{|int| int != agi_locus}       
     end
     
