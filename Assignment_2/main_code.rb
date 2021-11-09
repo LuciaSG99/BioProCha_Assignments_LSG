@@ -111,7 +111,7 @@ list_networks_updated.each {|net| report << "\n\n\nNetwork: Contains #{net.netwo
     end}
    report << "\n" + "The KEGG annotations of the original genes involved in this network are:\n\n"
    net.kegg_annotations.each {|key,value| report << "KEGG ID: " + key.to_s + "\t\t" + "Pathway name: " + value.to_s + "\n"}
-   report << "\n\n" + "The GO annotations of the original genes involved in this network are:\n"
+   report << "\n\n" + "The GO annotations of the original genes involved in this network are:\n\n"
    net.go_annotations.each {|key,value| report << "GO ID: " + key.to_s + "\t\t" + "Pathway name: " + value.to_s + "\n"}}
-
+   report << "\n\n These two networks contain almost the same number of genes, so can conclude that 12 of the 168 original genes are connected."
 report.close
