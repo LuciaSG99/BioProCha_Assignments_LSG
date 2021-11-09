@@ -26,6 +26,7 @@ KEGG ID: ath00190		Pathway name: Oxidative phosphorylation
 
 
 The GO annotations of the original genes involved in this network are:
+
 GO ID: GO:0009718		Pathway name: P:anthocyanin-containing compound biosynthetic process
 GO ID: GO:0010023		Pathway name: P:proanthocyanidin biosynthetic process
 GO ID: GO:0030154		Pathway name: P:cell differentiation
@@ -84,6 +85,7 @@ KEGG ID: ath00190		Pathway name: Oxidative phosphorylation
 
 
 The GO annotations of the original genes involved in this network are:
+
 GO ID: GO:0006355		Pathway name: P:regulation of transcription, DNA-templated
 GO ID: GO:0009738		Pathway name: P:abscisic acid-activated signaling pathway
 GO ID: GO:0009926		Pathway name: P:auxin polar transport
@@ -125,3 +127,6 @@ GO ID: GO:0009585		Pathway name: P:red, far-red light phototransduction
 GO ID: GO:0045454		Pathway name: P:cell redox homeostasis
 GO ID: GO:0006979		Pathway name: P:response to oxidative stress
 GO ID: GO:0009414		Pathway name: P:response to water deprivation
+
+
+ These two networks contain almost the same number of genes, so can conclude that 12 of the 168 original genes are connected.
