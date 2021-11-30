@@ -70,18 +70,6 @@ AT1G22690	BioRuby	repeated_sequence	883	888	.	+	.	AT1G22690_exon4
 
 AT1G22690	BioRuby	repeated_sequence	883	888	.	+	.	AT1G22690_exon4
 
-AT2G45170	BioRuby	repeated_sequence	1250	1255	.	+	.	AT2G45170_exon4
-
-AT2G45170	BioRuby	repeated_sequence	1298	1303	.	+	.	AT2G45170_exon4
-
-AT2G45170	BioRuby	repeated_sequence	1374	1379	.	+	.	AT2G45170_exon4
-
-AT2G45170	BioRuby	repeated_sequence	1250	1255	.	+	.	AT2G45170_exon5
-
-AT2G45170	BioRuby	repeated_sequence	1298	1303	.	+	.	AT2G45170_exon5
-
-AT2G45170	BioRuby	repeated_sequence	1374	1379	.	+	.	AT2G45170_exon5
-
 AT2G45170	BioRuby	repeated_sequence	60	65	.	+	.	AT2G45170_exon1
 
 AT2G45170	BioRuby	repeated_sequence	63	68	.	+	.	AT2G45170_exon1
@@ -89,6 +77,18 @@ AT2G45170	BioRuby	repeated_sequence	63	68	.	+	.	AT2G45170_exon1
 AT2G45170	BioRuby	repeated_sequence	66	71	.	+	.	AT2G45170_exon1
 
 AT2G45170	BioRuby	repeated_sequence	69	74	.	+	.	AT2G45170_exon1
+
+AT2G45170	BioRuby	repeated_sequence	1250	1255	.	+	.	AT2G45170_exon5
+
+AT2G45170	BioRuby	repeated_sequence	1298	1303	.	+	.	AT2G45170_exon5
+
+AT2G45170	BioRuby	repeated_sequence	1374	1379	.	+	.	AT2G45170_exon5
+
+AT2G45170	BioRuby	repeated_sequence	1250	1255	.	+	.	AT2G45170_exon4
+
+AT2G45170	BioRuby	repeated_sequence	1298	1303	.	+	.	AT2G45170_exon4
+
+AT2G45170	BioRuby	repeated_sequence	1374	1379	.	+	.	AT2G45170_exon4
 
 AT4G09650	BioRuby	repeated_sequence	5	10	.	+	.	AT4G09650_exon1
 
@@ -130,6 +130,12 @@ AT4G12800	BioRuby	repeated_sequence	1044	1049	.	+	.	AT4G12800_exon2
 
 AT4G12800	BioRuby	repeated_sequence	1159	1164	.	+	.	AT4G12800_exon2
 
+AT5G04140	BioRuby	repeated_sequence	7958	7963	.	+	.	AT5G04140_exon3
+
+AT5G04140	BioRuby	repeated_sequence	7979	7984	.	+	.	AT5G04140_exon3
+
+AT5G04140	BioRuby	repeated_sequence	4424	4429	.	+	.	AT5G04140_exon1
+
 AT5G04140	BioRuby	repeated_sequence	324	329	.	+	.	AT5G04140_exon1
 
 AT5G04140	BioRuby	repeated_sequence	327	332	.	+	.	AT5G04140_exon1
@@ -137,16 +143,6 @@ AT5G04140	BioRuby	repeated_sequence	327	332	.	+	.	AT5G04140_exon1
 AT5G04140	BioRuby	repeated_sequence	413	418	.	+	.	AT5G04140_exon1
 
 AT5G04140	BioRuby	repeated_sequence	416	421	.	+	.	AT5G04140_exon1
-
-AT5G04140	BioRuby	repeated_sequence	7958	7963	.	+	.	AT5G04140_exon3
-
-AT5G04140	BioRuby	repeated_sequence	7979	7984	.	+	.	AT5G04140_exon3
-
-AT5G04140	BioRuby	repeated_sequence	6890	6895	.	+	.	AT5G04140_exon2
-
-AT5G04140	BioRuby	repeated_sequence	6667	6672	.	+	.	AT5G04140_exon2
-
-AT5G04140	BioRuby	repeated_sequence	4424	4429	.	+	.	AT5G04140_exon1
 
 AT5G04140	BioRuby	repeated_sequence	137	142	.	+	.	AT5G04140_exon1
 
@@ -166,6 +162,10 @@ AT5G04140	BioRuby	repeated_sequence	413	418	.	+	.	AT5G04140_exon1
 
 AT5G04140	BioRuby	repeated_sequence	416	421	.	+	.	AT5G04140_exon1
 
+AT5G04140	BioRuby	repeated_sequence	6667	6672	.	+	.	AT5G04140_exon2
+
+AT5G04140	BioRuby	repeated_sequence	6890	6895	.	+	.	AT5G04140_exon2
+
 AT1G15820	BioRuby	repeated_sequence	155	160	.	-	.	AT1G15820_exon2
 
 AT1G15820	BioRuby	repeated_sequence	563	568	.	-	.	AT1G15820_exon2
@@ -173,6 +173,10 @@ AT1G15820	BioRuby	repeated_sequence	563	568	.	-	.	AT1G15820_exon2
 AT2G20670	BioRuby	repeated_sequence	1401	1406	.	-	.	AT2G20670_exon1
 
 AT1G23740	BioRuby	repeated_sequence	1477	1482	.	-	.	AT1G23740_exon1
+
+AT2G46340	BioRuby	repeated_sequence	1175	1180	.	-	.	AT2G46340_exon6
+
+AT2G46340	BioRuby	repeated_sequence	220	225	.	-	.	AT2G46340_exon8
 
 AT2G46340	BioRuby	repeated_sequence	4920	4925	.	-	.	AT2G46340_exon1
 
@@ -202,10 +206,6 @@ AT2G46340	BioRuby	repeated_sequence	5121	5126	.	-	.	AT2G46340_exon1
 
 AT2G46340	BioRuby	repeated_sequence	5124	5129	.	-	.	AT2G46340_exon1
 
-AT2G46340	BioRuby	repeated_sequence	220	225	.	-	.	AT2G46340_exon8
-
-AT2G46340	BioRuby	repeated_sequence	1175	1180	.	-	.	AT2G46340_exon6
-
 AT4G17460	BioRuby	repeated_sequence	430	435	.	+	.	AT4G17460_exon1
 
 AT4G17460	BioRuby	repeated_sequence	1600	1605	.	+	.	AT4G17460_exon4
@@ -224,9 +224,9 @@ AT1G07010	BioRuby	repeated_sequence	219	224	.	+	.	AT1G07010_exon1
 
 AT1G07010	BioRuby	repeated_sequence	222	227	.	+	.	AT1G07010_exon1
 
-AT1G32220	BioRuby	repeated_sequence	1050	1055	.	+	.	AT1G32220_exon5
-
 AT1G32220	BioRuby	repeated_sequence	1678	1683	.	+	.	AT1G32220_exon7
+
+AT1G32220	BioRuby	repeated_sequence	1050	1055	.	+	.	AT1G32220_exon5
 
 AT1G32220	BioRuby	repeated_sequence	1349	1354	.	+	.	AT1G32220_exon6
 
@@ -236,20 +236,6 @@ AT2G03750	BioRuby	repeated_sequence	965	970	.	-	.	AT2G03750_exon1
 
 AT3G47470	BioRuby	repeated_sequence	1479	1484	.	-	.	AT3G47470_exon1
 
-AT5G05690	BioRuby	repeated_sequence	200	205	.	-	.	AT5G05690_exon8
-
-AT5G05690	BioRuby	repeated_sequence	203	208	.	-	.	AT5G05690_exon8
-
-AT5G05690	BioRuby	repeated_sequence	200	205	.	-	.	AT5G05690_exon8
-
-AT5G05690	BioRuby	repeated_sequence	203	208	.	-	.	AT5G05690_exon8
-
-AT5G05690	BioRuby	repeated_sequence	3710	3715	.	-	.	AT5G05690_exon2
-
-AT5G05690	BioRuby	repeated_sequence	200	205	.	-	.	AT5G05690_exon9
-
-AT5G05690	BioRuby	repeated_sequence	203	208	.	-	.	AT5G05690_exon9
-
 AT5G05690	BioRuby	repeated_sequence	3710	3715	.	-	.	AT5G05690_exon1
 
 AT5G05690	BioRuby	repeated_sequence	4069	4074	.	-	.	AT5G05690_exon1
@@ -258,29 +244,41 @@ AT5G05690	BioRuby	repeated_sequence	4072	4077	.	-	.	AT5G05690_exon1
 
 AT5G05690	BioRuby	repeated_sequence	4091	4096	.	-	.	AT5G05690_exon1
 
-AT5G05690	BioRuby	repeated_sequence	3710	3715	.	-	.	AT5G05690_exon1
+AT5G05690	BioRuby	repeated_sequence	200	205	.	-	.	AT5G05690_exon8
 
-AT5G05690	BioRuby	repeated_sequence	4069	4074	.	-	.	AT5G05690_exon1
-
-AT5G05690	BioRuby	repeated_sequence	4072	4077	.	-	.	AT5G05690_exon1
-
-AT5G05690	BioRuby	repeated_sequence	4091	4096	.	-	.	AT5G05690_exon1
-
-AT5G05690	BioRuby	repeated_sequence	4069	4074	.	-	.	AT5G05690_exon1
-
-AT5G05690	BioRuby	repeated_sequence	4072	4077	.	-	.	AT5G05690_exon1
-
-AT5G05690	BioRuby	repeated_sequence	4091	4096	.	-	.	AT5G05690_exon1
-
-AT5G05690	BioRuby	repeated_sequence	2974	2979	.	-	.	AT5G05690_exon3
+AT5G05690	BioRuby	repeated_sequence	203	208	.	-	.	AT5G05690_exon8
 
 AT5G05690	BioRuby	repeated_sequence	3259	3264	.	-	.	AT5G05690_exon2
 
 AT5G05690	BioRuby	repeated_sequence	3276	3281	.	-	.	AT5G05690_exon2
 
-AT5G64410	BioRuby	repeated_sequence	1616	1621	.	-	.	AT5G64410_exon3
+AT5G05690	BioRuby	repeated_sequence	3710	3715	.	-	.	AT5G05690_exon2
 
-AT2G21330	BioRuby	repeated_sequence	213	218	.	-	.	AT2G21330_exon7
+AT5G05690	BioRuby	repeated_sequence	4069	4074	.	-	.	AT5G05690_exon1
+
+AT5G05690	BioRuby	repeated_sequence	4072	4077	.	-	.	AT5G05690_exon1
+
+AT5G05690	BioRuby	repeated_sequence	4091	4096	.	-	.	AT5G05690_exon1
+
+AT5G05690	BioRuby	repeated_sequence	200	205	.	-	.	AT5G05690_exon9
+
+AT5G05690	BioRuby	repeated_sequence	203	208	.	-	.	AT5G05690_exon9
+
+AT5G05690	BioRuby	repeated_sequence	200	205	.	-	.	AT5G05690_exon8
+
+AT5G05690	BioRuby	repeated_sequence	203	208	.	-	.	AT5G05690_exon8
+
+AT5G05690	BioRuby	repeated_sequence	2974	2979	.	-	.	AT5G05690_exon3
+
+AT5G05690	BioRuby	repeated_sequence	3710	3715	.	-	.	AT5G05690_exon1
+
+AT5G05690	BioRuby	repeated_sequence	4069	4074	.	-	.	AT5G05690_exon1
+
+AT5G05690	BioRuby	repeated_sequence	4072	4077	.	-	.	AT5G05690_exon1
+
+AT5G05690	BioRuby	repeated_sequence	4091	4096	.	-	.	AT5G05690_exon1
+
+AT5G64410	BioRuby	repeated_sequence	1616	1621	.	-	.	AT5G64410_exon3
 
 AT2G21330	BioRuby	repeated_sequence	213	218	.	-	.	AT2G21330_exon6
 
@@ -290,17 +288,19 @@ AT2G21330	BioRuby	repeated_sequence	213	218	.	-	.	AT2G21330_exon5
 
 AT2G21330	BioRuby	repeated_sequence	819	824	.	-	.	AT2G21330_exon5
 
+AT2G21330	BioRuby	repeated_sequence	213	218	.	-	.	AT2G21330_exon7
+
 AT1G15980	BioRuby	repeated_sequence	174	179	.	+	.	AT1G15980_exon1
 
 AT1G15980	BioRuby	repeated_sequence	445	450	.	+	.	AT1G15980_exon1
 
 AT1G15980	BioRuby	repeated_sequence	483	488	.	+	.	AT1G15980_exon1
 
+AT1G12250	BioRuby	repeated_sequence	1750	1755	.	+	.	AT1G12250_exon6
+
 AT1G12250	BioRuby	repeated_sequence	3	8	.	+	.	AT1G12250_exon1
 
 AT1G12250	BioRuby	repeated_sequence	1952	1957	.	+	.	AT1G12250_exon7
-
-AT1G12250	BioRuby	repeated_sequence	1750	1755	.	+	.	AT1G12250_exon6
 
 AT1G12250	BioRuby	repeated_sequence	1952	1957	.	+	.	AT1G12250_exon6
 
@@ -316,27 +316,27 @@ AT3G18890	BioRuby	repeated_sequence	3786	3791	.	+	.	AT3G18890_exon1
 
 AT3G18890	BioRuby	repeated_sequence	3789	3794	.	+	.	AT3G18890_exon1
 
+AT4G22890	BioRuby	repeated_sequence	2433	2438	.	+	.	AT4G22890_exon1
+
 AT4G22890	BioRuby	repeated_sequence	242	247	.	+	.	AT4G22890_exon1
 
 AT4G22890	BioRuby	repeated_sequence	333	338	.	+	.	AT4G22890_exon1
 
-AT4G22890	BioRuby	repeated_sequence	2433	2438	.	+	.	AT4G22890_exon1
+AT4G22890	BioRuby	repeated_sequence	242	247	.	+	.	AT4G22890_exon1
+
+AT4G22890	BioRuby	repeated_sequence	333	338	.	+	.	AT4G22890_exon1
 
 AT4G22890	BioRuby	repeated_sequence	1981	1986	.	+	.	AT4G22890_exon8
 
 AT4G22890	BioRuby	repeated_sequence	2433	2438	.	+	.	AT4G22890_exon1
 
-AT4G22890	BioRuby	repeated_sequence	2433	2438	.	+	.	AT4G22890_exon1
-
-AT4G22890	BioRuby	repeated_sequence	1981	1986	.	+	.	AT4G22890_exon8
-
-AT4G22890	BioRuby	repeated_sequence	242	247	.	+	.	AT4G22890_exon1
-
-AT4G22890	BioRuby	repeated_sequence	333	338	.	+	.	AT4G22890_exon1
+AT4G22890	BioRuby	repeated_sequence	1851	1856	.	+	.	AT4G22890_exon7
 
 AT4G22890	BioRuby	repeated_sequence	2433	2438	.	+	.	AT4G22890_exon9
 
-AT4G22890	BioRuby	repeated_sequence	1851	1856	.	+	.	AT4G22890_exon7
+AT4G22890	BioRuby	repeated_sequence	2433	2438	.	+	.	AT4G22890_exon1
+
+AT4G22890	BioRuby	repeated_sequence	1981	1986	.	+	.	AT4G22890_exon8
 
 AT1G37130	BioRuby	repeated_sequence	1175	1180	.	+	.	AT1G37130_exon1
 
@@ -384,6 +384,10 @@ AT3G01500	BioRuby	repeated_sequence	3361	3366	.	-	.	AT3G01500_exon1
 
 AT3G01500	BioRuby	repeated_sequence	3420	3425	.	-	.	AT3G01500_exon1
 
+AT3G01500	BioRuby	repeated_sequence	4064	4069	.	-	.	AT3G01500_exon1
+
+AT3G01500	BioRuby	repeated_sequence	4184	4189	.	-	.	AT3G01500_exon1
+
 AT3G01500	BioRuby	repeated_sequence	3325	3330	.	-	.	AT3G01500_exon1
 
 AT3G01500	BioRuby	repeated_sequence	3328	3333	.	-	.	AT3G01500_exon1
@@ -391,10 +395,6 @@ AT3G01500	BioRuby	repeated_sequence	3328	3333	.	-	.	AT3G01500_exon1
 AT3G01500	BioRuby	repeated_sequence	3361	3366	.	-	.	AT3G01500_exon1
 
 AT3G01500	BioRuby	repeated_sequence	3420	3425	.	-	.	AT3G01500_exon1
-
-AT3G01500	BioRuby	repeated_sequence	4064	4069	.	-	.	AT3G01500_exon1
-
-AT3G01500	BioRuby	repeated_sequence	4184	4189	.	-	.	AT3G01500_exon1
 
 AT3G01500	BioRuby	repeated_sequence	3325	3330	.	-	.	AT3G01500_exon1
 
@@ -424,13 +424,13 @@ AT2G30600	BioRuby	repeated_sequence	44	49	.	+	.	AT2G30600_exon1
 
 AT1G65490	BioRuby	repeated_sequence	192	197	.	+	.	AT1G65490_exon1
 
-AT1G65490	BioRuby	repeated_sequence	445	450	.	+	.	AT1G65490_exon2
-
 AT1G65490	BioRuby	repeated_sequence	192	197	.	+	.	AT1G65490_exon1
 
 AT1G65490	BioRuby	repeated_sequence	445	450	.	+	.	AT1G65490_exon2
 
 AT1G65490	BioRuby	repeated_sequence	767	772	.	+	.	AT1G65490_exon2
+
+AT1G65490	BioRuby	repeated_sequence	445	450	.	+	.	AT1G65490_exon2
 
 AT1G65490	BioRuby	repeated_sequence	192	197	.	+	.	AT1G65490_exon1
 
@@ -454,11 +454,11 @@ AT1G12780	BioRuby	repeated_sequence	2365	2370	.	-	.	AT1G12780_exon1
 
 AT1G12780	BioRuby	repeated_sequence	188	193	.	-	.	AT1G12780_exon8
 
-AT1G55480	BioRuby	repeated_sequence	1905	1910	.	+	.	AT1G55480_exon7
-
 AT1G55480	BioRuby	repeated_sequence	232	237	.	+	.	AT1G55480_exon1
 
 AT1G55480	BioRuby	repeated_sequence	466	471	.	+	.	AT1G55480_exon1
+
+AT1G55480	BioRuby	repeated_sequence	1905	1910	.	+	.	AT1G55480_exon7
 
 AT2G17880	BioRuby	repeated_sequence	484	489	.	-	.	AT2G17880_exon1
 
@@ -536,63 +536,63 @@ AT3G49160	BioRuby	repeated_sequence	3055	3060	.	-	.	AT3G49160_exon1
 
 AT5G14740	BioRuby	repeated_sequence	4672	4677	.	+	.	AT5G14740_exon1
 
+AT5G14740	BioRuby	repeated_sequence	246	251	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	249	254	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	252	257	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	289	294	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	292	297	.	+	.	AT5G14740_exon1
+
 AT5G14740	BioRuby	repeated_sequence	4672	4677	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	4672	4677	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	246	251	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	249	254	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	252	257	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	289	294	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	292	297	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	4672	4677	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	246	251	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	249	254	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	252	257	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	289	294	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	292	297	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	246	251	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	249	254	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	252	257	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	289	294	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	292	297	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	246	251	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	249	254	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	252	257	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	289	294	.	+	.	AT5G14740_exon1
+
+AT5G14740	BioRuby	repeated_sequence	292	297	.	+	.	AT5G14740_exon1
 
 AT5G14740	BioRuby	repeated_sequence	1184	1189	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	246	251	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	249	254	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	252	257	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	289	294	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	292	297	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	246	251	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	249	254	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	252	257	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	289	294	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	292	297	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	246	251	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	249	254	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	252	257	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	289	294	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	292	297	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	246	251	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	249	254	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	252	257	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	289	294	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	292	297	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	4672	4677	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	4672	4677	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	246	251	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	249	254	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	252	257	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	289	294	.	+	.	AT5G14740_exon1
-
-AT5G14740	BioRuby	repeated_sequence	292	297	.	+	.	AT5G14740_exon1
 
 AT5G14740	BioRuby	repeated_sequence	4672	4677	.	+	.	AT5G14740_exon1
 
@@ -614,9 +614,13 @@ AT2G39730	BioRuby	repeated_sequence	2666	2671	.	-	.	AT2G39730_exon1
 
 AT2G39730	BioRuby	repeated_sequence	2669	2674	.	-	.	AT2G39730_exon1
 
-AT2G39730	BioRuby	repeated_sequence	31	36	.	-	.	AT2G39730_exon7
+AT2G39730	BioRuby	repeated_sequence	2016	2021	.	-	.	AT2G39730_exon2
+
+AT2G39730	BioRuby	repeated_sequence	31	36	.	-	.	AT2G39730_exon6
 
 AT2G39730	BioRuby	repeated_sequence	1577	1582	.	-	.	AT2G39730_exon3
+
+AT2G39730	BioRuby	repeated_sequence	31	36	.	-	.	AT2G39730_exon7
 
 AT2G39730	BioRuby	repeated_sequence	31	36	.	-	.	AT2G39730_exon7
 
@@ -626,37 +630,33 @@ AT2G39730	BioRuby	repeated_sequence	2666	2671	.	-	.	AT2G39730_exon1
 
 AT2G39730	BioRuby	repeated_sequence	2669	2674	.	-	.	AT2G39730_exon1
 
-AT2G39730	BioRuby	repeated_sequence	31	36	.	-	.	AT2G39730_exon6
+AT1G20020	BioRuby	repeated_sequence	2383	2388	.	+	.	AT1G20020_exon9
 
-AT2G39730	BioRuby	repeated_sequence	2016	2021	.	-	.	AT2G39730_exon2
+AT1G20020	BioRuby	repeated_sequence	105	110	.	+	.	AT1G20020_exon1
+
+AT1G20020	BioRuby	repeated_sequence	273	278	.	+	.	AT1G20020_exon1
+
+AT1G20020	BioRuby	repeated_sequence	276	281	.	+	.	AT1G20020_exon1
+
+AT1G20020	BioRuby	repeated_sequence	105	110	.	+	.	AT1G20020_exon1
+
+AT1G20020	BioRuby	repeated_sequence	273	278	.	+	.	AT1G20020_exon1
+
+AT1G20020	BioRuby	repeated_sequence	276	281	.	+	.	AT1G20020_exon1
+
+AT1G20020	BioRuby	repeated_sequence	2383	2388	.	+	.	AT1G20020_exon9
 
 AT1G20020	BioRuby	repeated_sequence	2383	2388	.	+	.	AT1G20020_exon8
 
-AT1G20020	BioRuby	repeated_sequence	2383	2388	.	+	.	AT1G20020_exon9
-
-AT1G20020	BioRuby	repeated_sequence	2383	2388	.	+	.	AT1G20020_exon9
-
 AT1G20020	BioRuby	repeated_sequence	105	110	.	+	.	AT1G20020_exon1
 
 AT1G20020	BioRuby	repeated_sequence	273	278	.	+	.	AT1G20020_exon1
 
 AT1G20020	BioRuby	repeated_sequence	276	281	.	+	.	AT1G20020_exon1
-
-AT1G20020	BioRuby	repeated_sequence	105	110	.	+	.	AT1G20020_exon1
-
-AT1G20020	BioRuby	repeated_sequence	273	278	.	+	.	AT1G20020_exon1
-
-AT1G20020	BioRuby	repeated_sequence	276	281	.	+	.	AT1G20020_exon1
-
-AT1G20020	BioRuby	repeated_sequence	105	110	.	+	.	AT1G20020_exon1
-
-AT1G20020	BioRuby	repeated_sequence	273	278	.	+	.	AT1G20020_exon1
-
-AT1G20020	BioRuby	repeated_sequence	276	281	.	+	.	AT1G20020_exon1
-
-AT1G70820	BioRuby	repeated_sequence	1724	1729	.	+	.	AT1G70820_exon4
 
 AT1G70820	BioRuby	repeated_sequence	1166	1171	.	+	.	AT1G70820_exon3
+
+AT1G70820	BioRuby	repeated_sequence	1724	1729	.	+	.	AT1G70820_exon4
 
 AT3G26740	BioRuby	repeated_sequence	78	83	.	+	.	AT3G26740_exon1
 
@@ -674,7 +674,15 @@ AT4G28780	BioRuby	repeated_sequence	2384	2389	.	+	.	AT4G28780_exon5
 
 AT4G28780	BioRuby	repeated_sequence	936	941	.	+	.	AT4G28780_exon3
 
+AT1G12900	BioRuby	repeated_sequence	1938	1943	.	-	.	AT1G12900_exon1
+
+AT1G12900	BioRuby	repeated_sequence	1938	1943	.	-	.	AT1G12900_exon1
+
 AT1G12900	BioRuby	repeated_sequence	1648	1653	.	-	.	AT1G12900_exon2
+
+AT1G12900	BioRuby	repeated_sequence	1648	1653	.	-	.	AT1G12900_exon2
+
+AT1G12900	BioRuby	repeated_sequence	1322	1327	.	-	.	AT1G12900_exon3
 
 AT1G12900	BioRuby	repeated_sequence	1648	1653	.	-	.	AT1G12900_exon2
 
@@ -686,13 +694,9 @@ AT1G12900	BioRuby	repeated_sequence	1322	1327	.	-	.	AT1G12900_exon3
 
 AT1G12900	BioRuby	repeated_sequence	1322	1327	.	-	.	AT1G12900_exon3
 
-AT1G12900	BioRuby	repeated_sequence	1938	1943	.	-	.	AT1G12900_exon1
+AT1G64680	BioRuby	repeated_sequence	1143	1148	.	+	.	AT1G64680_exon3
 
-AT1G12900	BioRuby	repeated_sequence	1938	1943	.	-	.	AT1G12900_exon1
-
-AT1G12900	BioRuby	repeated_sequence	1648	1653	.	-	.	AT1G12900_exon2
-
-AT1G12900	BioRuby	repeated_sequence	1322	1327	.	-	.	AT1G12900_exon3
+AT1G64680	BioRuby	repeated_sequence	1308	1313	.	+	.	AT1G64680_exon3
 
 AT1G64680	BioRuby	repeated_sequence	1143	1148	.	+	.	AT1G64680_exon4
 
@@ -701,10 +705,6 @@ AT1G64680	BioRuby	repeated_sequence	1308	1313	.	+	.	AT1G64680_exon4
 AT1G64680	BioRuby	repeated_sequence	121	126	.	+	.	AT1G64680_exon1
 
 AT1G64680	BioRuby	repeated_sequence	121	126	.	+	.	AT1G64680_exon1
-
-AT1G64680	BioRuby	repeated_sequence	1143	1148	.	+	.	AT1G64680_exon3
-
-AT1G64680	BioRuby	repeated_sequence	1308	1313	.	+	.	AT1G64680_exon3
 
 AT2G25200	BioRuby	repeated_sequence	427	432	.	-	.	AT2G25200_exon1
 
@@ -716,9 +716,9 @@ AT3G55800	BioRuby	repeated_sequence	311	316	.	+	.	AT3G55800_exon1
 
 AT3G55800	BioRuby	repeated_sequence	314	319	.	+	.	AT3G55800_exon1
 
-AT3G55800	BioRuby	repeated_sequence	1425	1430	.	+	.	AT3G55800_exon5
-
 AT3G55800	BioRuby	repeated_sequence	867	872	.	+	.	AT3G55800_exon3
+
+AT3G55800	BioRuby	repeated_sequence	1425	1430	.	+	.	AT3G55800_exon5
 
 AT4G21280	BioRuby	repeated_sequence	933	938	.	+	.	AT4G21280_exon2
 
@@ -726,11 +726,11 @@ AT4G21280	BioRuby	repeated_sequence	933	938	.	+	.	AT4G21280_exon2
 
 AT5G15850	BioRuby	repeated_sequence	1449	1454	.	-	.	AT5G15850_exon1
 
+AT1G06680	BioRuby	repeated_sequence	1534	1539	.	+	.	AT1G06680_exon4
+
+AT1G06680	BioRuby	repeated_sequence	1534	1539	.	+	.	AT1G06680_exon4
+
 AT1G06680	BioRuby	repeated_sequence	698	703	.	+	.	AT1G06680_exon2
-
-AT1G06680	BioRuby	repeated_sequence	1534	1539	.	+	.	AT1G06680_exon4
-
-AT1G06680	BioRuby	repeated_sequence	1534	1539	.	+	.	AT1G06680_exon4
 
 AT2G43550	BioRuby	repeated_sequence	36	41	.	+	.	AT2G43550_exon1
 
@@ -754,6 +754,10 @@ AT5G17300	BioRuby	repeated_sequence	2654	2659	.	-	.	AT5G17300_exon1
 
 AT5G17300	BioRuby	repeated_sequence	2687	2692	.	-	.	AT5G17300_exon1
 
+AT5G17300	BioRuby	repeated_sequence	1751	1756	.	-	.	AT5G17300_exon2
+
+AT5G17300	BioRuby	repeated_sequence	1751	1756	.	-	.	AT5G17300_exon2
+
 AT5G17300	BioRuby	repeated_sequence	2536	2541	.	-	.	AT5G17300_exon1
 
 AT5G17300	BioRuby	repeated_sequence	2539	2544	.	-	.	AT5G17300_exon1
@@ -770,13 +774,7 @@ AT5G17300	BioRuby	repeated_sequence	2654	2659	.	-	.	AT5G17300_exon1
 
 AT5G17300	BioRuby	repeated_sequence	2687	2692	.	-	.	AT5G17300_exon1
 
-AT5G17300	BioRuby	repeated_sequence	1751	1756	.	-	.	AT5G17300_exon2
-
-AT5G17300	BioRuby	repeated_sequence	1751	1756	.	-	.	AT5G17300_exon2
-
-AT1G77490	BioRuby	repeated_sequence	143	148	.	+	.	AT1G77490_exon1
-
-AT1G77490	BioRuby	repeated_sequence	334	339	.	+	.	AT1G77490_exon1
+AT1G77490	BioRuby	repeated_sequence	3156	3161	.	+	.	AT1G77490_exon1
 
 AT1G77490	BioRuby	repeated_sequence	143	148	.	+	.	AT1G77490_exon1
 
@@ -784,7 +782,9 @@ AT1G77490	BioRuby	repeated_sequence	334	339	.	+	.	AT1G77490_exon1
 
 AT1G77490	BioRuby	repeated_sequence	3156	3161	.	+	.	AT1G77490_exon1
 
-AT1G77490	BioRuby	repeated_sequence	3156	3161	.	+	.	AT1G77490_exon1
+AT1G77490	BioRuby	repeated_sequence	143	148	.	+	.	AT1G77490_exon1
+
+AT1G77490	BioRuby	repeated_sequence	334	339	.	+	.	AT1G77490_exon1
 
 AT3G27690	BioRuby	repeated_sequence	1566	1571	.	+	.	AT3G27690_exon2
 
@@ -798,23 +798,21 @@ AT3G27690	BioRuby	repeated_sequence	122	127	.	+	.	AT3G27690_exon1
 
 AT1G64720	BioRuby	repeated_sequence	1142	1147	.	-	.	AT1G64720_exon4
 
+AT1G64720	BioRuby	repeated_sequence	43	48	.	-	.	AT1G64720_exon6
+
+AT1G64720	BioRuby	repeated_sequence	1341	1346	.	-	.	AT1G64720_exon3
+
 AT1G64720	BioRuby	repeated_sequence	1769	1774	.	-	.	AT1G64720_exon1
 
 AT1G64720	BioRuby	repeated_sequence	2062	2067	.	-	.	AT1G64720_exon1
 
 AT1G64720	BioRuby	repeated_sequence	2065	2070	.	-	.	AT1G64720_exon1
 
-AT1G64720	BioRuby	repeated_sequence	1341	1346	.	-	.	AT1G64720_exon3
-
-AT1G64720	BioRuby	repeated_sequence	43	48	.	-	.	AT1G64720_exon6
+AT2G26080	BioRuby	repeated_sequence	4692	4697	.	-	.	AT2G26080_exon1
 
 AT2G26080	BioRuby	repeated_sequence	3235	3240	.	-	.	AT2G26080_exon2
 
-AT2G26080	BioRuby	repeated_sequence	4692	4697	.	-	.	AT2G26080_exon1
-
-AT3G56940	BioRuby	repeated_sequence	30	35	.	+	.	AT3G56940_exon1
-
-AT3G56940	BioRuby	repeated_sequence	282	287	.	+	.	AT3G56940_exon1
+AT3G56940	BioRuby	repeated_sequence	1231	1236	.	+	.	AT3G56940_exon3
 
 AT3G56940	BioRuby	repeated_sequence	282	287	.	+	.	AT3G56940_exon2
 
@@ -822,7 +820,9 @@ AT3G56940	BioRuby	repeated_sequence	1668	1673	.	+	.	AT3G56940_exon5
 
 AT3G56940	BioRuby	repeated_sequence	30	35	.	+	.	AT3G56940_exon1
 
-AT3G56940	BioRuby	repeated_sequence	1231	1236	.	+	.	AT3G56940_exon3
+AT3G56940	BioRuby	repeated_sequence	30	35	.	+	.	AT3G56940_exon1
+
+AT3G56940	BioRuby	repeated_sequence	282	287	.	+	.	AT3G56940_exon1
 
 AT5G20250	BioRuby	repeated_sequence	318	323	.	+	.	AT5G20250_exon1
 
@@ -840,6 +840,8 @@ AT3G48360	BioRuby	repeated_sequence	2727	2732	.	-	.	AT3G48360_exon1
 
 AT3G48360	BioRuby	repeated_sequence	2760	2765	.	-	.	AT3G48360_exon1
 
+AT3G48360	BioRuby	repeated_sequence	2301	2306	.	-	.	AT3G48360_exon2
+
 AT3G48360	BioRuby	repeated_sequence	2721	2726	.	-	.	AT3G48360_exon1
 
 AT3G48360	BioRuby	repeated_sequence	2724	2729	.	-	.	AT3G48360_exon1
@@ -847,8 +849,6 @@ AT3G48360	BioRuby	repeated_sequence	2724	2729	.	-	.	AT3G48360_exon1
 AT3G48360	BioRuby	repeated_sequence	2727	2732	.	-	.	AT3G48360_exon1
 
 AT3G48360	BioRuby	repeated_sequence	2760	2765	.	-	.	AT3G48360_exon1
-
-AT3G48360	BioRuby	repeated_sequence	2301	2306	.	-	.	AT3G48360_exon2
 
 AT1G61520	BioRuby	repeated_sequence	1165	1170	.	+	.	AT1G61520_exon3
 
@@ -868,11 +868,11 @@ AT1G61520	BioRuby	repeated_sequence	460	465	.	+	.	AT1G61520_exon2
 
 AT1G61520	BioRuby	repeated_sequence	1165	1170	.	+	.	AT1G61520_exon4
 
+AT2G43010	BioRuby	repeated_sequence	1268	1273	.	+	.	AT2G43010_exon2
+
 AT2G43010	BioRuby	repeated_sequence	369	374	.	+	.	AT2G43010_exon1
 
 AT2G43010	BioRuby	repeated_sequence	372	377	.	+	.	AT2G43010_exon1
-
-AT2G43010	BioRuby	repeated_sequence	1268	1273	.	+	.	AT2G43010_exon2
 
 AT2G43010	BioRuby	repeated_sequence	369	374	.	+	.	AT2G43010_exon1
 
@@ -910,10 +910,6 @@ AT5G24210	BioRuby	repeated_sequence	1954	1959	.	+	.	AT5G24210_exon5
 
 AT5G24210	BioRuby	repeated_sequence	1954	1959	.	+	.	AT5G24210_exon4
 
-AT1G71030	BioRuby	repeated_sequence	847	852	.	-	.	AT1G71030_exon1
-
-AT1G71030	BioRuby	repeated_sequence	1360	1365	.	-	.	AT1G71030_exon1
-
 AT1G71030	BioRuby	repeated_sequence	344	349	.	-	.	AT1G71030_exon3
 
 AT1G71030	BioRuby	repeated_sequence	415	420	.	-	.	AT1G71030_exon3
@@ -921,6 +917,10 @@ AT1G71030	BioRuby	repeated_sequence	415	420	.	-	.	AT1G71030_exon3
 AT1G71030	BioRuby	repeated_sequence	544	549	.	-	.	AT1G71030_exon3
 
 AT1G71030	BioRuby	repeated_sequence	847	852	.	-	.	AT1G71030_exon2
+
+AT1G71030	BioRuby	repeated_sequence	847	852	.	-	.	AT1G71030_exon1
+
+AT1G71030	BioRuby	repeated_sequence	1360	1365	.	-	.	AT1G71030_exon1
 
 AT1G71030	BioRuby	repeated_sequence	1360	1365	.	-	.	AT1G71030_exon1
 
@@ -942,6 +942,8 @@ AT3G08940	BioRuby	repeated_sequence	189	194	.	+	.	AT3G08940_exon1
 
 AT3G08940	BioRuby	repeated_sequence	189	194	.	+	.	AT3G08940_exon1
 
+AT2G18700	BioRuby	repeated_sequence	2387	2392	.	+	.	AT2G18700_exon2
+
 AT2G18700	BioRuby	repeated_sequence	11	16	.	+	.	AT2G18700_exon1
 
 AT2G18700	BioRuby	repeated_sequence	14	19	.	+	.	AT2G18700_exon1
@@ -956,8 +958,6 @@ AT2G18700	BioRuby	repeated_sequence	599	604	.	+	.	AT2G18700_exon1
 
 AT2G18700	BioRuby	repeated_sequence	1193	1198	.	+	.	AT2G18700_exon1
 
-AT2G18700	BioRuby	repeated_sequence	2387	2392	.	+	.	AT2G18700_exon2
-
 AT3G45780	BioRuby	repeated_sequence	45	50	.	+	.	AT3G45780_exon1
 
 AT3G45780	BioRuby	repeated_sequence	5770	5775	.	+	.	AT3G45780_exon1
@@ -967,6 +967,8 @@ AT5G18670	BioRuby	repeated_sequence	1423	1428	.	+	.	AT5G18670_exon3
 AT1G68570	BioRuby	repeated_sequence	787	792	.	+	.	AT1G68570_exon3
 
 AT1G68570	BioRuby	repeated_sequence	790	795	.	+	.	AT1G68570_exon3
+
+AT2G30950	BioRuby	repeated_sequence	2734	2739	.	+	.	AT2G30950_exon5
 
 AT2G30950	BioRuby	repeated_sequence	556	561	.	+	.	AT2G30950_exon2
 
@@ -981,8 +983,6 @@ AT2G30950	BioRuby	repeated_sequence	556	561	.	+	.	AT2G30950_exon2
 AT2G30950	BioRuby	repeated_sequence	975	980	.	+	.	AT2G30950_exon2
 
 AT2G30950	BioRuby	repeated_sequence	1203	1208	.	+	.	AT2G30950_exon2
-
-AT2G30950	BioRuby	repeated_sequence	2734	2739	.	+	.	AT2G30950_exon5
 
 AT2G30950	BioRuby	repeated_sequence	2734	2739	.	+	.	AT2G30950_exon5
 
@@ -1016,8 +1016,6 @@ AT1G09340	BioRuby	repeated_sequence	481	486	.	+	.	AT1G09340_exon1
 
 AT1G09340	BioRuby	repeated_sequence	591	596	.	+	.	AT1G09340_exon1
 
-AT3G63140	BioRuby	repeated_sequence	99	104	.	-	.	AT3G63140_exon6
-
 AT3G63140	BioRuby	repeated_sequence	1601	1606	.	-	.	AT3G63140_exon1
 
 AT3G63140	BioRuby	repeated_sequence	1604	1609	.	-	.	AT3G63140_exon1
@@ -1032,6 +1030,8 @@ AT3G63140	BioRuby	repeated_sequence	1616	1621	.	-	.	AT3G63140_exon1
 
 AT3G63140	BioRuby	repeated_sequence	1619	1624	.	-	.	AT3G63140_exon1
 
+AT3G63140	BioRuby	repeated_sequence	99	104	.	-	.	AT3G63140_exon6
+
 AT1G76080	BioRuby	repeated_sequence	1541	1546	.	-	.	AT1G76080_exon1
 
 AT1G02640	BioRuby	repeated_sequence	314	319	.	+	.	AT1G02640_exon1
@@ -1040,9 +1040,9 @@ AT1G02640	BioRuby	repeated_sequence	317	322	.	+	.	AT1G02640_exon1
 
 AT1G02640	BioRuby	repeated_sequence	643	648	.	+	.	AT1G02640_exon1
 
-AT5G35630	BioRuby	repeated_sequence	2111	2116	.	+	.	AT5G35630_exon8
-
 AT5G35630	BioRuby	repeated_sequence	295	300	.	+	.	AT5G35630_exon1
+
+AT5G35630	BioRuby	repeated_sequence	2111	2116	.	+	.	AT5G35630_exon8
 
 AT5G35630	BioRuby	repeated_sequence	318	323	.	+	.	AT5G35630_exon1
 
@@ -1068,11 +1068,11 @@ AT4G38840	BioRuby	repeated_sequence	418	423	.	-	.	AT4G38840_exon1
 
 AT3G50820	BioRuby	repeated_sequence	88	93	.	-	.	AT3G50820_exon3
 
-AT4G37610	BioRuby	repeated_sequence	1867	1872	.	-	.	AT4G37610_exon1
-
 AT4G37610	BioRuby	repeated_sequence	1070	1075	.	-	.	AT4G37610_exon3
 
 AT4G37610	BioRuby	repeated_sequence	318	323	.	-	.	AT4G37610_exon5
+
+AT4G37610	BioRuby	repeated_sequence	1867	1872	.	-	.	AT4G37610_exon1
 
 AT1G76100	BioRuby	repeated_sequence	811	816	.	-	.	AT1G76100_exon1
 
@@ -1140,12 +1140,6 @@ AT4G39710	BioRuby	repeated_sequence	1767	1772	.	-	.	AT4G39710_exon1
 
 AT1G20440	BioRuby	repeated_sequence	923	928	.	-	.	AT1G20440_exon1
 
-AT5G02160	BioRuby	repeated_sequence	802	807	.	+	.	AT5G02160_exon2
-
-AT5G02160	BioRuby	repeated_sequence	842	847	.	+	.	AT5G02160_exon2
-
-AT5G02160	BioRuby	repeated_sequence	1137	1142	.	+	.	AT5G02160_exon2
-
 AT5G02160	BioRuby	repeated_sequence	114	119	.	+	.	AT5G02160_exon1
 
 AT5G02160	BioRuby	repeated_sequence	117	122	.	+	.	AT5G02160_exon1
@@ -1153,6 +1147,12 @@ AT5G02160	BioRuby	repeated_sequence	117	122	.	+	.	AT5G02160_exon1
 AT5G02160	BioRuby	repeated_sequence	228	233	.	+	.	AT5G02160_exon1
 
 AT5G02160	BioRuby	repeated_sequence	285	290	.	+	.	AT5G02160_exon1
+
+AT5G02160	BioRuby	repeated_sequence	802	807	.	+	.	AT5G02160_exon2
+
+AT5G02160	BioRuby	repeated_sequence	842	847	.	+	.	AT5G02160_exon2
+
+AT5G02160	BioRuby	repeated_sequence	1137	1142	.	+	.	AT5G02160_exon2
 
 AT2G05540	BioRuby	repeated_sequence	154	159	.	+	.	AT2G05540_exon1
 
@@ -1188,9 +1188,9 @@ AT4G09010	BioRuby	repeated_sequence	1858	1863	.	-	.	AT4G09010_exon1
 
 AT4G09010	BioRuby	repeated_sequence	1861	1866	.	-	.	AT4G09010_exon1
 
-AT5G49360	BioRuby	repeated_sequence	4461	4466	.	-	.	AT5G49360_exon1
-
 AT5G49360	BioRuby	repeated_sequence	212	217	.	-	.	AT5G49360_exon6
+
+AT5G49360	BioRuby	repeated_sequence	4461	4466	.	-	.	AT5G49360_exon1
 
 AT3G16140	BioRuby	repeated_sequence	294	299	.	-	.	AT3G16140_exon3
 

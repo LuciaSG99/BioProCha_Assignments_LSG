@@ -64,10 +64,10 @@ def obtain_position_cttctt(key,embl_obj,feature,exon,chr_start)
             #position of the match.
               if exon == 1
                
-                start_pos_seq = match.begin(0).to_i + localization_obj.from.to_i #initial position of the match in the sequence (GENE)
+                start_pos_seq = match.begin(0).to_i  + localization_obj.from.to_i #initial position of the match in the sequence (GENE)
                 
               else
-                start_pos_seq = match.begin(0).to_i + chr_start.to_i #initial position of the match in the whole chromosome sequence 
+                start_pos_seq = match.begin(0).to_i  + start.to_i + chr_start.to_i #initial position of the match in the whole chromosome sequence 
               end
                                            
               end_pos_seq = start_pos_seq.to_i + 5.to_i #the final position of the match is calculated by adding 5 to the start position (because the repeat has 6 nucleotides)
@@ -90,14 +90,16 @@ def obtain_position_cttctt(key,embl_obj,feature,exon,chr_start)
                       
              matches_2.each{|match|
              if exon == 1
-                start_pos_seq = match.begin(0).to_i + localization_obj.from.to_i #initial position of the match in the sequence (GENE)
+                start_pos_seq = match.begin(0).to_i  + localization_obj.from.to_i #initial position of the match in the sequence (GENE)
               
              else
-                start_pos_seq = match.begin(0).to_i + chr_start.to_i #initial position of the match in the whole chromosome sequence 
+                start_pos_seq = match.begin(0).to_i  + start.to_i + chr_start.to_i #initial position of the match in the whole chromosome sequence 
+                
              end
                                            
               end_pos_seq = start_pos_seq.to_i + 5.to_i #the final position of the match is calculated by adding 5 to the start position (because the repeat has 6 nucleotides)
               coordenates = "complement(#{start_pos_seq.to_s}..#{end_pos_seq.to_s})"
+              
               position_matches << coordenates}
            end
         end
@@ -197,6 +199,7 @@ list_genes_no_repeat.each {|gene| report_file << gene
 hash_bio_seq_obj = Hash.new #to add the new features we have to use Bio::Sequence objects instead of Bio:EMBL objects. This hash will contain those objects 
 hash_bio_obj_rep.each{|nm,obj| #for each key (Gene name, for example = "AT4g27030") and list containing
   start_chr = obj.primary_accession.split(":")[3] #the start position of the chr
+  puts start_chr
   obj.features.each {|ft2|
   list_coordenates_gene = obtain_position_cttctt(nm,obj,ft2,0,start_chr)
   list_coordenates_gene.each {|coordenates|
@@ -205,7 +208,7 @@ hash_bio_obj_rep.each{|nm,obj| #for each key (Gene name, for example = "AT4g2703
    end
    
    if ft2.locations.locations[0].strand == +1
-    feature_match = new_feature("CTTCTT_match_chr",coordenates,'-',"#{nm}_#{ft2.qualifiers[0].value.match(/exon\d/)[0]}")
+    feature_match = new_feature("CTTCTT_match_chr",coordenates,'+',"#{nm}_#{ft2.qualifiers[0].value.match(/exon\d/)[0]}")
    end
    
    obj.features << feature_match}}
@@ -216,6 +219,7 @@ gff3_file = File.open("new_features_chr.gff", 'w')
 gff3_file << "##gff-version 3\n\n"
 hash_bio_obj_rep.each{|g_n,value|
  chr = value.primary_accession.split(":")[2]
+ 
  value.features.each {|featu|
   if featu.feature == "CTTCTT_match_chr"
     if featu.position.match(/complement/)
