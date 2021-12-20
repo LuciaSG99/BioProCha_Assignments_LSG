@@ -27,33 +27,65 @@ end
 
 create_database(s_pombe_fa,'prot','s_pombe_db')
 create_database(a_thaliana_fa,'nucl','a_thaliana_db')
+
 #create the S.Pombe BLAST database. Because it has sequences of aminoacids, we must use the method blastx with the nucleotides queries of A.thaliana:
-#s_pombe_db = Bio::Blast.local('blastx','../Databases/s_pombe_db') 
 s_pombe_db = Bio::Blast.local('blastx','s_pombe_db') 
 
 #create the A.Thaliana BLAST database. Because it has sequences of nucleotides, we must use the method tblastn with the aminoacides queries of S.Pombe:
-#a_thaliana_db = Bio::Blast.local('tblastn','../Databases/a_thaliana_db') 
-
 a_thaliana_db = Bio::Blast.local('tblastn','a_thaliana_db') 
 
 ######### 2. PERFORMANCE THE "RECIPROCAL BEST BLAST” TO FIND PUTATIVE ORTHOLOGUES:
-#maximum E-value threshold of 1×10 − 6
+### FILTER PARAMETERS:
+# maximum E-value threshold of 1×10 − 6
 # coverage of at least 50%
-#Gabriel Moreno-Hagelsieb, Kristen Latimer, Choosing BLAST options for better detection of orthologs as reciprocal best hits, Bioinformatics, Volume 24, Issue 3, 1 February 2008, Pages 319–324, https://doi.org/10.1093/bioinformatics/btm585
-#Ward, N., & Moreno-Hagelsieb, G. (2014). Quickly finding orthologs as reciprocal best hits with BLAT, LAST, and UBLAST: how much do we miss?. PloS one, 9(7), e101850. https://doi.org/10.1371/journal.pone.0101850
 
-s_pombe_sequences = Bio::FlatFile.open(s_pombe_fa) #flatfile to contain the protein sequences to use each as a query
+##REFERENCES:
+# 1. Gabriel Moreno-Hagelsieb, Kristen Latimer, Choosing BLAST options for better detection of orthologs as reciprocal best hits, Bioinformatics, Volume 24, Issue 3, 1 February 2008, Pages 319–324, https://doi.org/10.1093/bioinformatics/btm585
+# 2. Ward, N., & Moreno-Hagelsieb, G. (2014). Quickly finding orthologs as reciprocal best hits with BLAT, LAST, and UBLAST: how much do we miss?. PloS one, 9(7), e101850. https://doi.org/10.1371/journal.pone.0101850
 
-list_seq_pombe_prueba = Array.new
-s_pombe_sequences.each {|entry|  list_seq_pombe_prueba << entry} #puts "ID sequence: #{entry.entry_id}"
+s_pombe_sequences = Bio::FlatFile.open(s_pombe_fa) #flat file to contain the protein sequences to use each as a query
+a_thaliana_sequences = Bio::FlatFile.open(a_thaliana_fa) #flat file to contain the protein sequences to use each as a query
+
+#s_pombe_sequences.each{|query_pombe| reciprocal_best_blast(query_pombe,a_thaliana_db,s_pombe_db,1e-6,0.5)}
+query_1 = s_pombe_sequences.entries[23]
+puts "query inspect: #{query_1.entry_id}"
+putative_orthologues = Hash.new #Hash that will contain the orthologues discovered
+
+
+def reciprocal_best_blast(query1, database1, database2,evalue_thresh,coverage_thres)
+  
+  ##1. Perform the first blast search:
+  results_1 = database1.query(query1) 
+  best_hit_1 = results_1.hits[0] #blast orders the results be the evalue, starting from the lowest value, so the first hit is the one with the best evalue
+  
+  coverage_hit = (best_hit_1.query_end.to_f - best_hit_1.query_start.to_f)/(best_hit_1.query_len.to_f) # calculate the coverage proportion of the alignment
+  
+  if best_hit_1.evalue.to_f <= evalue_thresh.to_f && coverage_hit.to_f >= coverage_thres.to_f #if the first hit satisfy the filter that was established:
+     
+     
+        
+       puts "\ninspect hit: #{best_hit_1.definition.split("|")}"
+       ## 2. Perform the second blast search --> Here best_hit_1 is used as a query against the second database:
+       results_2 = database2.query(best_hit_1.target_seq)
+       best_hit_2 = results_2.hits[0]
+       #puts "\nquery1_id: #{query1.definition}"
+       #puts "\nhit_second_blast_id: #{best_hit_2.target_id}"
+       #puts "\nsequence query 1: #{query1.seq}"
+       #puts "\nsequence second hit: #{best_hit_2.target_seq}"
+    
+     
+  else
+   puts "\nevalue: #{best_hit_1.evalue} and coverage: #{coverage_hit}"
+  end
+      
+end
+
+reciprocal_best_blast(query_1,a_thaliana_db,s_pombe_db,10e-6,0.5)
+#s_pombe_sequences.each {|entry|  list_seq_pombe_prueba << entry} #puts "ID sequence: #{entry.entry_id}"
     #puts "sequence: #{entry.seq}"}
 #puts list_seq_pombe_prueba[0..2].each {|query| puts query.seq}  # para ver las queries
 
-#busqueda de prueba:
-query_1 = list_seq_pombe_prueba[0]
 
-best_hit = Array.new()
-results = a_thaliana_db.query(query_1)
 
 ##### To see the output:
 #results.each {|hit| puts "#{hit.hit_id} : evalue #{hit.evalue}\t#{hit.target_id} at "
@@ -65,28 +97,12 @@ results = a_thaliana_db.query(query_1)
 #end}
 
 ### Store the best hit:
-hits = Array.new
-results.each {|hit| hits << hit} #store the hits into an Array
+#hits = Array.new
+#results.each {|hit| hits << hit} #store the hits into an Array
+#
+#best_hit = results[0] #BLAST always order the hits, starting from the lowest evalue
 
-
-
-
-putative_orthologues = Hash.new #Hash that will contain the orthologues discovered
-
-
-
-def find_orthologues(query,first_database,putative_orthologues)
-    #performance the first BLAST: tblastn
-    report = first_database.query(query)
-    report.each {|hit| puts "evalue = #{hit.evalue} of the protein #{hit.hit_id} with the query #{hit.target_id}"}
-end
-
-
-
-
-
-
-
-
-
+#puts "start of sequence align: #{best_hit_1.query_start.to_i}"
+  #puts "end of sequence align: #{best_hit_1.query_end.to_i}"
+  #puts "length of query sequence: #{best_hit_1.query_len.to_i}"
 

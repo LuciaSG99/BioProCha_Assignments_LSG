@@ -1,0 +1,32 @@
+REPORT PUTATIVE ORTHOLOGUES BY APPLYING THE METHOD --> RECIPROCAL BEST BLAST
+
+There were found 19 pairs of putative orthologues doing a Reciprocal best blast using as a filter an evalue <= 1e-6 and a minimum coverage of 50%
+
+References used to establish the parameters:
+
+1. Gabriel Moreno-Hagelsieb, Kristen Latimer, Choosing BLAST options for better detection of orthologs as reciprocal best hits, Bioinformatics, Volume 24, Issue 3, 1 February 2008, Pages 319–324, https://doi.org/10.1093/bioinformatics/btm585
+2. Ward, N., & Moreno-Hagelsieb, G. (2014). Quickly finding orthologs as reciprocal best hits with BLAT, LAST, and UBLAST: how much do we miss?. PloS one, 9(7), e101850. https://doi.org/10.1371/journal.pone.0101850
+
+
+
+ID_A.THALIANA		ID_S.POMBE
+
+AT1G48430.1		SPAC977.16c
+AT5G37830.1		SPAC11D3.15
+AT1G58280.3		SPAC5H10.03
+AT1G76690.1		SPAC5H10.04
+AT5G48840.1		SPAC5H10.08c
+AT2G46110.1		SPAC5H10.09c
+AT5G22750.1		SPAC13G6.01c
+AT5G50810.1		SPAC13G6.04
+AT2G26080.1		SPAC13G6.06c
+AT5G10360.1		SPAC13G6.07c
+AT5G27450.3		SPAC13G6.11c
+AT1G73540.1		SPAC13G6.14
+AT3G62040.1		SPAC24B11.05
+AT3G45640.1		SPAC24B11.06c
+AT1G36050.2		SPAC24B11.08c
+AT4G22310.1		SPAC24B11.09
+AT5G08280.1		SPAC24B11.13
+AT5G55810.1		SPAC806.06c
+AT4G09320.1		SPAC806.07
