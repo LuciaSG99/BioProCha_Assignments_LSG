@@ -15,7 +15,7 @@ database.hash_seed_stock.values.each {|seed_object| seed_object.modify_stock(7)}
 database.hash_seed_stock.values.each {|seed_object| seed_object.last_planted = Date.today}
 
 ##creating the new file with the information of the seed stock database updated:
-new_file = File.open(seed_stock_modified,"w") #variable that will allows us to write the new file
+new_file = File.open("report.txt","w") #variable that will allows us to write the new file
 header = IO.readlines(seed_stock_file)[0].chomp.split("\t") #obtains the header of the file (remove the "\n" at the end of the header with chomp)
 header.each {|column| new_file << column + "\t"} #adds the columns names in the new file
 

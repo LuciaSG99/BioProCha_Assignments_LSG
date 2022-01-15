@@ -1,7 +1,7 @@
 REPORT OF GENES THAT DO NOT HAVE THE SEQUENCE 'CTTCTT' IN THEIR EXONS:
 
 Number of total genes from the list: 168
-Number of genes without the sequence CTTCTT: 41
+Number of genes without the sequence CTTCTT: 40
 
 AT4G27030
 AT4G05180
@@ -23,7 +23,6 @@ AT2G34420
 AT3G02730
 AT5G01015
 AT1G14150
-AT1G54040
 AT3G21870
 AT5G22920
 AT5G11070
